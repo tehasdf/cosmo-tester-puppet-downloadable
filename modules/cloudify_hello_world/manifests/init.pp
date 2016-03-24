@@ -8,7 +8,7 @@ class cloudify_hello_world {
     apache::vhost{'cloudify_hello_world':
         docroot => $docroot,
         directoryindex => 'index.html',
-        port => $cloudify_properties_port,
+        port => 8080,
     }
 
     # Files
